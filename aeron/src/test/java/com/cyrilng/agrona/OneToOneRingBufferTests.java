@@ -47,7 +47,7 @@ class OneToOneRingBufferTests {
 
     static class MessageCapture implements MessageHandler {
 
-        private HashSet<String> receivedStrings = new HashSet<>();
+        private final HashSet<String> receivedStrings = new HashSet<>();
         private int count = 0;
 
         @Override
@@ -60,7 +60,7 @@ class OneToOneRingBufferTests {
 
     static class ControlledMessageCapture implements ControlledMessageHandler {
 
-        private HashSet<String> receivedStrings = new HashSet<>();
+        private final HashSet<String> receivedStrings = new HashSet<>();
         private int count = 0;
 
         @Override
