@@ -21,6 +21,11 @@ dependencies {
     testImplementation("org.slf4j:slf4j-simple:2.0.17")
 }
 
+java {
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
+}
+
 test {
     useJUnitPlatform()
 }

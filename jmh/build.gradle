@@ -22,6 +22,11 @@ dependencies {
     implementation('com.lmax:disruptor:4.0.0')
 }
 
+java {
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
+}
+
 test {
     useJUnitPlatform()
 }
