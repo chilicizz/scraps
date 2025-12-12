@@ -1,4 +1,4 @@
-package com.cyrilng.jmh;
+package com.cyrilng;
 
 import java.io.IOException;
 

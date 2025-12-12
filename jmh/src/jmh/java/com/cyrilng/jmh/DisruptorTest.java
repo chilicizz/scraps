@@ -7,7 +7,7 @@ import java.util.List;
 
 @Fork(warmups = 0, value = 1)
 @Warmup(iterations = 0)
-@Measurement(iterations = 3)
+@Measurement(iterations = 1)
 public class DisruptorTest {
 
     @Benchmark
