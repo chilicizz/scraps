@@ -15,7 +15,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     // https://mvnrepository.com/artifact/io.aeron/aeron-all
-    implementation("io.aeron:aeron-all:1.49.2")
+    implementation("io.aeron:aeron-all:1.49.3")
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     implementation("org.slf4j:slf4j-api:${rootProject.ext.slf4jVersion}")
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
