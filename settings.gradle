@@ -1,3 +1,4 @@
 rootProject.name = 'scraps'
 include 'jmh'
 include 'aeron'
+include 'protos'

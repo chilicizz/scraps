@@ -11,8 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/aeron" />
             <option value="$PROJECT_DIR$/jmh" />
+            <option value="$PROJECT_DIR$/protos" />
           </set>
         </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/protos" />
       </GradleProjectSettings>
     </option>
   </component>
