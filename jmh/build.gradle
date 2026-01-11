@@ -6,15 +6,18 @@ plugins {
 group = 'com.cyrilng'
 version = '1.0-SNAPSHOT'
 
+def jmhVersion = '1.37'
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation('org.openjdk.jmh:jmh-core:1.37')
-    annotationProcessor('org.openjdk.jmh:jmh-generator-annprocess:1.37')
+    implementation("org.openjdk.jmh:jmh-core:${jmhVersion}")
+    annotationProcessor("org.openjdk.jmh:jmh-generator-annprocess:${jmhVersion}")
 
-    testImplementation platform('org.junit:junit-bom:6.0.1')
+    // use shared junit BOM version from root project
+    testImplementation platform("org.junit:junit-bom:${rootProject.ext.junitBomVersion}")
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 

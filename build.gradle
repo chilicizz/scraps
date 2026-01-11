@@ -5,6 +5,11 @@ plugins {
 group = 'com.cyrilng'
 version = '1.0-SNAPSHOT'
 
+ext {
+    junitBomVersion = '6.0.2'
+    slf4jVersion = '2.0.17'
+}
+
 repositories {
     mavenCentral()
 }
@@ -13,9 +18,13 @@ dependencies {
     implementation(project(':jmh'))
     implementation(project(':aeron'))
     implementation(project(':protos'))
-    testImplementation platform('org.junit:junit-bom:6.0.2')
+    testImplementation platform("org.junit:junit-bom:${junitBomVersion}")
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation("org.slf4j:slf4j-api:${slf4jVersion}")
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testImplementation("org.slf4j:slf4j-simple:${slf4jVersion}")
 }
 
 java {

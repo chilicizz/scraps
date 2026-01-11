@@ -5,20 +5,21 @@ plugins {
 group = 'com.cyrilng'
 version = '1.0-SNAPSHOT'
 
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:6.0.2')
+    testImplementation platform("org.junit:junit-bom:${rootProject.ext.junitBomVersion}")
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     // https://mvnrepository.com/artifact/io.aeron/aeron-all
     implementation("io.aeron:aeron-all:1.49.2")
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-    implementation("org.slf4j:slf4j-api:2.0.17")
+    implementation("org.slf4j:slf4j-api:${rootProject.ext.slf4jVersion}")
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
-    testImplementation("org.slf4j:slf4j-simple:2.0.17")
+    testImplementation("org.slf4j:slf4j-simple:${rootProject.ext.slf4jVersion}")
 }
 
 java {
