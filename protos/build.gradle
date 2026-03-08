@@ -4,8 +4,9 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.chilicizz'
+group = 'com.cyrilng'
 version = '1.0-SNAPSHOT'
+
 def grpcVersion = '1.78.0'
 def protobufVersion = '3.25.5'
 def protocVersion = protobufVersion
