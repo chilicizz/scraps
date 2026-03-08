@@ -1,7 +1,10 @@
+import org.junit.jupiter.api.Test;
+
 public class StructuredConcurrencyTest {
 
-    public static void main(final String[] args) {
-        var weather = Weather.readWeather();
-        System.out.println("weather = " + weather);
+    @Test
+    public void runTest() {
+            var weather = Weather.readWeather();
+            System.out.println("weather = " + weather);
     }
 }

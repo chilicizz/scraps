@@ -1,9 +1,7 @@
-
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Random;
 import java.util.concurrent.StructuredTaskScope;
-import java.util.function.Function;
 
 public record Weather(String weather, String server) {
 

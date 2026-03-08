@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation(platform("org.junit:junit-bom:${rootProject.ext.junitBomVersion}"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
@@ -31,5 +31,8 @@ tasks.withType(JavaCompile).configureEach {
     options.compilerArgs += "--enable-preview"
 }
 tasks.withType(JavaExec).configureEach {
+    jvmArgs += "--enable-preview"
+}
+tasks.withType(Test).configureEach {
     jvmArgs += "--enable-preview"
 }
